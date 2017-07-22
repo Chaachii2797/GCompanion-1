@@ -29,6 +29,13 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 
-    compile 'com.clarifai.clarifai-api2:core:2.2.6'
 
+    compile 'com.clarifai.clarifai-api2:core:2.2.10'
+
+
+
+}
+
+repositories {
+    mavenCentral()
 }

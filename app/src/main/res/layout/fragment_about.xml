@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginTop="20sp"
+        android:text="        G-Companion is a mobile application that helps you manage your recyclable materials.
+                                         Through this application, you can capture the image of the garbage then the application
+                                         will scan and recommend DIY tips."
+        android:textStyle="italic"
+        android:textSize="20dp" />
+
+
+</FrameLayout>
