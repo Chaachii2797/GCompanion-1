@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cabiso.daphny.com.gcompanion.Camera"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imgPhotoSaver"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        app:srcCompat="@android:drawable/gallery_thumb"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_weight="0.99" />
+
+    <FrameLayout
+        android:id="@+id/FirstFrame"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="256dp"></FrameLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Save"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="458dp" />
+
+</LinearLayout>

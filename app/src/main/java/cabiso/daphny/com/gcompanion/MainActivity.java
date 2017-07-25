@@ -1,5 +1,6 @@
 package cabiso.daphny.com.gcompanion;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -57,6 +59,7 @@ import clarifai2.dto.prediction.Concept;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
+    private ProgressDialog pd = null;
     private Boolean isFabOpen = false;
     private FloatingActionButton fab, fab1, fab2;
     private Animation fab_open, fab_close, rotate_forward, rotate_backward;
@@ -170,6 +173,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.fab1:
 
                 Log.d("Camera", "Fab 1");
+                Intent intent = new Intent(MainActivity.this,Camera.class);
+                startActivity(intent);
+                pd = ProgressDialog.show(this,"G-Companion Camera","Please wait....", true,false);
                 break;
             case R.id.fab2:
 

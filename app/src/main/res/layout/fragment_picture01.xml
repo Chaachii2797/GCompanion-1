@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameOne"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen1"
+    tools:context="cabiso.daphny.com.gcompanion.Fragments.Picture01">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="368dp"
+        android:layout_height="501dp"
+        app:srcCompat="@drawable/bottle_piggy_bank"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <TextView
+            android:id="@+id/tvPrice"
+            style="@style/fontStyle"
+            android:layout_width="177dp"
+            android:layout_height="42dp"
+            android:text="Php 100.00"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="448dp" />
+
+</FrameLayout>

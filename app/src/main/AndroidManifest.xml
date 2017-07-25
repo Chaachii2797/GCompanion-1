@@ -3,12 +3,11 @@
     package="cabiso.daphny.com.gcompanion">
 
     <uses-permission android:name="android.permission.CAMERA" />
-     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
-
 
     <application
         android:allowBackup="true"
@@ -27,9 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity"/>
-
+        <activity android:name=".MainActivity" />
+        <activity android:name=".HomePicture1" />
+        <activity android:name=".Camera"></activity>
+        <activity android:name=".HomePicture2"></activity>
     </application>
 
 </manifest>
